@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean')
+	;
+
+.item a {
+	font-size: 24px;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.home_today {
+	background-image: url(../pics/6.png);
+	background-repeat: no-repeat;
+	padding-botton: 300 px;
+	margin: 0 auto;
+	width: 40%;
+	height: 500px;
+	background-color: #e6e6e6;
+	background-position: 50% 30%;
+	text-align: center;
+}
+
+.home_today_n {
+	background-image: url(../pics/Nt.png);
+	background-repeat: no-repeat;
+	padding-botton: 300 px;
+	margin: 0 auto;
+	width: 41%;
+	height: 500px;
+	background-color: #e6e6e6;
+	background-position: 50% 30%;
+}
+
+.home_today_title {
+	text-align: center;
+	color: #f48487;
+	font-size: 60px;
+	padding-top: 300px;
+	padding-bottom: 100px;
+	font-weight: bold;
+}
+
+.home_viedo {
+	padding-bottom: 300px;
+}
+
+.contentt_today {
+	font-size: 15px;
+	color: #000000;
+}
+
+.home_today img {
+	width: 150px;
+	height: 200px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.home_today_sub {
+	text-align: center;
+	color: #222;
+	font-size: 30px;
+	padding-top: 22%;
+}
+
+.home_today_sub a {
+	color: #222;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.index_about_contents {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.index_about_contents_contents {
+	font-size: 20px;
+	font: bold;
+	line-height: 2em;
+}
+
+.index_about_contents_title {
+	font-size: 70px;
+	color: #f8cdd7;
+	padding-bottom: 30px;
+	text-decoration: none;
+}
+
+.index_about_viedo {
+	text-align: center;
+	margin-left: 3%;
+	whidth: 100%;
+	height: 550px;
+}
+
+.index_about {
+	padding-top: 10px;
+}
+
+.index_about_contents_title_re {
+	color: #93b9e6;
+}
+
+.home_icon img {
+	width: 50px;
+	height: 50px;
+}
+
+.home_icon {
+	width: 100%;
+	height: 100%;
+}
+
+.home_icon table {
+	padding-left: 50px;
+	padding-top: 50px;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.home_icon table tr td {
+	margin: 0 auto;
+}
+
+.index_about_contents_img table {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.index_about_contents_img img {
+	width: 120px;
+	height: 180px;
+}
+
+.index_about_n {
+	background-color: #dfdfdf;
+	padding-top: 10px;
+}
+
+.footer {
+	clear: both;
+	background: #f3f3f3;
+	padding: 10px 60px;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 500px;
+}
+
+.cen {
+	text-align: center;
+}
+
+/*여기부터*/
+.home_icon table {
+	padding-right: 50px;
+}
+
+.home_icon_table_img {
+	padding-top: 50px;
+}
+
+.san2_table {
+	background-color: #f48487;
+	color: #fff;
+	height: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.san2_table_3 {
+	font-size: 20px;
+}
+
+.san2_table_4 {
+	font-size: 35px;
+	color: #ffffff;
+}
+
+.san2_table_5 {
+	font-size: 40px;
+	color: #2a1f45;
+	font-weight: bold;
+}
+
+.san2_table_img img {
+	width: 170px;
+	height: 240px;
+	padding: 60px 0;
+}
+
+.san2_table_img td {
+	width: 33%;
+}
+
+.heart_san {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px;
+	border-color: transparent transparent #f48487 transparent;
+}
+/*2*/
+.idea_san {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px;
+	border-color: transparent transparent #fff7c8 transparent;
+}
+
+.san3_table {
+	background-color: #fff7c8;
+	color: #000000;
+	height: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 20px 20px 20px 20px;
+}
+/*3*/
+.earth_san {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px;
+	border-color: transparent transparent #26c1c5 transparent;
+}
+
+.san4_table {
+	background-color: #26c1c5;
+	color: #ffffff;
+	height: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 20px 20px 20px 20px;
+}
+/*4*/
+.star_san {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px;
+	border-color: transparent transparent #1f4e79 transparent;
+}
+
+.san5_table {
+	background-color: #1f4e79;
+	color: #ffffff;
+	height: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 20px 20px 20px 20px;
+}

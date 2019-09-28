@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/action/book/BadUpAction.java=UTF-8
+encoding//src/action/book/GoodUpAction.java=UTF-8
+encoding//src/action/bookcart/BookRentDeleteAction.java=UTF-8
+encoding//src/action/excel/booklistexcel.java=UTF-8
+encoding//src/action/excel/psaleslistexcel.java=UTF-8
+encoding//src/action/excel/saleslistexcel.java=UTF-8
+encoding//src/action/home/UpdatedataAction.java=UTF-8
+encoding//src/action/member/EmailCheckAction.java=UTF-8
+encoding//src/action/rent/RentBookRentAction.java=UTF-8
+encoding//src/action/request/AdminRequestOKAction.java=UTF-8
+encoding//src/action/request/RequestModifyPostAction.java=UTF-8
+encoding//src/action/request/RequestWritePostAction.java=UTF-8
+encoding//src/action/sms/test.java=UTF-8

@@ -1,0 +1,617 @@
+@charset "UTF-8";
+
+/* navigation css */
+.header {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.topnav ul {
+	float: right;
+}
+
+.topnav ul li {
+	float: left;
+	padding: 16px 12px;
+}
+
+.navigation {
+	clear: both;
+}
+
+.logo {
+	float: left;
+	font-family: 'Nanum Gothic';
+}
+
+.nav {
+	float: right;
+}
+
+/* 
+float 시키면 아래쪽 영역에 영향을 준다
+아래쪽 그룹에 clear:both 을 하여 float 해제를 시켜야 한다
+*/
+.nav>nav>.navi>li {
+	float: left;
+	width: 120px;
+}
+
+.nav>nav>.navi>li>a {
+	padding: 12px 18px;
+	display: inline-block;
+}
+
+.nav>nav>.navi>li>.navi2 {
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	display: none;
+	background: #fff;
+	position: absolute;
+	z-index: 99999;
+}
+
+.nav>nav>.navi>li>.navi2>li {
+	float: none;
+	padding: 12px 18px;
+}
+
+.line {
+	clear: both;
+	background: #ccc;
+	height: 1px;
+}
+
+.indexgallery {
+	clear: both;
+	padding: 50px 0;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.indexgallery .indextitle {
+	float: left;
+	width: 285px;
+	margin-right: 20px;
+}
+
+.indexgallery .indextitle h2 {
+	padding-bottom: 16px;
+}
+
+.indexgallery .indextitle span {
+	width: 80px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ccc;
+	display: inline-block;
+	transition: all 0.5s;
+}
+
+.indexgallery .indextitle span:hover {
+	background: #FA5858;
+	border: 0 none;
+}
+
+.indexgallery .indextitle span:hover a {
+	color: #fff;
+}
+
+.indexgallery ul li {
+	float: left;
+	width: 285px;
+	height: 285px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	padding: 1px;
+	overflow: hidden;
+}
+
+.indexgallery ul li img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+	transform: scale(1.0); /* 변형 : 크기, 회전, 기울이기등 */
+}
+
+.indexgallery ul li:hover img {
+	transform: scale(1.08);
+}
+
+.indexgallery ul li:last-child {
+	margin-right: 0;
+}
+
+.sitewrap {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 99999;
+	display: none;
+}
+
+.sitewrap>span {
+	color: #fff;
+	font-size: 30px;
+	float: right;
+	padding: 20px;
+	display: inline-block;
+}
+
+.sitewrap>.inner {
+	padding: 100px;
+	height: 100%;
+}
+
+.sitewrap>.inner>span {
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* bbs css */
+.bbs_wrap {
+	clear: both;
+	width: 1200px; /* 가로폭 지정 */
+	/* border:1px solid #ccc;   테두리 선 */
+	/* background:#f00;  배경색 */
+	height: 360px; /* 높이 */
+	margin: 0 auto; /* 그룹 가운데 정렬 */
+	/* 
+	10 30 20 50 상 우 하 좌
+	10 20 상하 , 좌우
+	40 30 20 상, 좌우 , 하
+	10 상하좌우 
+	*/
+}
+
+.bbs_left, .bbs_right {
+	width: 585px;
+	float: left; /* 그룹을 왼쪽으로 정렬 */
+	border: 1px solid #cdcdcd;
+	padding: 40px;
+	border-radius: 5px; /* 모서리 둥글게 */
+	position: relative; /* 상대위치 지정, 왼쪽 상당이 기준점이 된다 */
+}
+
+.bbs_left .plus, .bbs_right .plus {
+	position: absolute;
+	right: 30px;
+	top: 40px;
+	padding: 12px;
+}
+
+.bbs_left {
+	margin-right: 30px;
+}
+
+.title {
+	margin-bottom: 16px;
+}
+
+.bbs_left ul li { /* 하위 선택자 */
+	line-height: 220%; /* 줄간격 */
+}
+
+.bbs_right ul li { /* 하위 선택자 */
+	line-height: 220%; /* 줄간격 */
+}
+
+/* footer css */
+.footer {
+	clear: both;
+	width: 100%;
+	background: #424242;
+	padding: 30px 0;
+}
+
+footer {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.footer p {
+	text-align: center; /* 텍스트 가운데 정렬 */
+	color: #fff; /* 글자색 */
+	font-size: 18px; /* 글자크기 */
+	font-family: 나눔고딕; /* 글꼴 */
+	letter-spacing: -1px; /*자간 간격 */
+}
+
+/* about css */
+.contain {
+	clear: both;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 60px 0 40px 0; /* 상우하좌 */
+	overflow: hidden; /* 부모높이 인식되게 할때 */
+}
+
+.contain .titleimg {
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+}
+
+.contain .content {
+	width: 850px;
+	float: left;
+	line-height: 180%;
+}
+
+img {
+	width: 100%;
+}
+
+/* gallery css */
+.sub-topcontent {
+	overflow: hidden;
+} /*float시킨 부모그룹*/
+.sub-content {
+	clear: both
+} /* float 시킨 하위그룹 */
+.sub-title {
+	font-size: 36px;
+	color: #444;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	float: left;
+}
+
+.sub-search {
+	float: right;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.sub-search .sel {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.sub-search .text {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.sub-search .btn {
+	padding: 10px;
+	background: transparent; /* 배경 투명하게 처리 */
+	border: 1px solid #ccc;
+}
+
+.contain>ul>li {
+	width: 285px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.contain ul li:nth-child(4n) { /* 4의 배수에 해당하는 li */
+	margin-right: 0px;
+}
+
+.p26 {
+	padding: 26px 0;
+} /* 상하, 좌우 */
+.sub-content .gallry-title {
+	float: left;
+}
+
+.sub-content .hit {
+	float: right;
+}
+
+/* page css */
+.paging {
+	clear: both;
+	padding: 30px 0;
+	overflow: hidden;
+	/* 플로트시킨 부모에게 overflow:hidden 을 주면 부모높이 인식됨*/
+}
+
+.paging ul {
+	width: 360px;
+	margin: 0 auto;
+}
+
+.paging ul li {
+	float: left;
+	margin: 5px;
+}
+
+.paging ul li a {
+	padding: 12px;
+	border: 1px solid #ccc; /* 선두께 선종류 선색상 */
+}
+
+.btn-write {
+	background: #93b9e6;
+	color: #fff;
+	padding: 12px 18px;
+	float: right;
+	margin-top: -5px; /*마이너스값은 위로 올라간다 */
+	border: 0 none;
+}
+
+.btn-reset {
+	background: #93b9e6;
+	color: #fff;
+	padding: 12px 18px;
+	float: right;
+	margin-top: -5px; /*마이너스값은 위로 올라간다 */
+	border: 0 none;
+	margin-right: 8px;
+}
+
+.readonly {
+	font-size: 0;
+	width: 0;
+	height: 0;
+}
+
+.write-form th, .write-form td {
+	padding: 18px;
+}
+
+table {
+	width: 100%;
+}
+
+.write-form input[type="text"], .write-form input[type="password"],
+	.write-form textarea {
+	width: 100%;
+	padding: 12px 5px;
+}
+
+.write-form textarea {
+	height: 300px;
+}
+
+th, td {
+	text-align: left;
+	border-bottom: 1px dashed #ccc;
+}
+
+.sub-view-title {
+	text-align: center;
+}
+
+.sub-view-wd {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.sub-view-contnet {
+	padding: 30px 0 50px; /*상,좌우,하 */
+	line-height: 170%; /* 줄간격 */
+}
+
+.sub-view-bottom {
+	padding-bottom: 60px;
+}
+
+.sub-view-bottom a.btn-modify {
+	background: #93b9e6;
+	color: #fff;
+	padding: 12px 18px;
+}
+
+.sub-view-bottom a.btn-delete {
+	background: #93b9e6;
+	color: #fff;
+	padding: 12px 18px;
+}
+
+.sub-view-bottom a.btn-list {
+	background: #93b9e6;
+	color: #fff;
+	padding: 12px 18px;
+}
+
+.contain>.sub-port-content>li {
+	width: 100%;
+}
+
+.sub-port-content>li>span.date {
+	width: 5%;
+	padding: 50px 0;
+	margin: 0 60px 0 25px;
+	color: #000;
+	float: left;
+}
+
+.sub-port-content  li span em {
+	font-size: 45px;
+	font-weight: bold; /* 진하게 */
+	font-style: normal; /* 기울어진 글자 똑바로 세울때 */
+	display: block; /* 인라인요소를 블럭요소로 변경 */
+}
+
+.sub-port-content .text-wrap {
+	float: left;
+	width: 85%;
+}
+
+.sub-port-content .text-wrap .img-wrap {
+	width: 30%;
+	float: left;
+	margin-right: 2.5%;
+}
+
+.sub-port-content .text-wrap .text-body {
+	float: left;
+}
+
+.sub-port-content .text-wrap .title {
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.sub-port-content .text-wrap .text-cont {
+	line-height: 180%;
+}
+
+/* qa css */
+.qatable th, .qatable td {
+	text-align: center;
+	border-bottom: 1px dashed #ccc;
+	padding: 18px;
+}
+
+.qatable .tleft {
+	text-align: left;
+}
+
+.qatable .tcenter {
+	text-align: center;
+}
+
+.qatable .tright {
+	text-align: right;
+}
+
+.qatable .red {
+	background: #93b9e6;
+	padding: 10px 16px;
+	color: #fff;
+}
+
+.qatable .gray {
+	background: #f2f2f2;
+	padding: 10px 16px;
+}
+
+.write-form select.hp1, .write-form input.hp2, .write-form input.hp3 {
+	width: 80px;
+	padding: 12px 5px;
+}
+
+.write-form input.minput {
+	width: 60%;
+	padding: 10px;
+}
+
+.write-form input.email {
+	width: 30%;
+	padding: 10px;
+}
+
+/* shop css */
+.sub-content .price {
+	display: block;
+	font-weight: bold;
+	padding-top: 18px;
+}
+
+/* shop css */
+.shoptitle {
+	padding-bottom: 50px;
+}
+
+.shopimg {
+	width: 40%;
+	margin-right: 3%;
+	float: left;
+}
+
+.shoptop {
+	width: 57%;
+	float: left;
+}
+
+.shoptop strong {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.shoptop p {
+	padding: 20px 0;
+}
+
+.shoptop .select {
+	padding: 10px;
+	font-size: 16px;
+	color: #333;
+	width: 100%;
+}
+
+.shoptop .btngroup {
+	padding: 20px 0;
+}
+
+.shopcont {
+	clear: both;
+}
+
+.btn-cart {
+	width: 168px;
+	height: 50px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+
+.btn-buy {
+	display: inline-block;
+	text-align: center;
+	width: 168px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #f43142;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.banner {
+	clear: both;
+	padding: 80px 0;
+}
+
+.w20 {
+	width: 20%;
+}
+
+.w80 {
+	width: 80%;
+}
+
+.bx-wrapper {
+	-moz-box-shadow: 0 0 0 #fff;
+	-webkit-box-shadow: 0 0 0 #ccc;
+	box-shadow: 0 0 0 #ccc;
+	border: 0px solid #fff;
+	background: #fff;
+}
+
+/* top */
+.top {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+.top #btntop {
+	width: 65px;
+	height: 65px;
+	line-heihgt: 65px; /* 높이와 줄간격을 같게하면 수직 가운데*/
+	background: #FA5858;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 2px; /* 자간간격 */
+	font-size: 10px;
+	font-weight: bold;
+}

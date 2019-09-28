@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* topmenu css */
+.header {
+	width: 100%;
+	margin: 0 auto;
+	height: 120px;
+	position: fixed;
+}
+
+.header .header_top {
+	float: right;
+	height: 50px;
+	width: 100%;
+}
+
+.header .header_top a {
+	color: #808080;
+}
+
+.header .header_top ul {
+	margin-right: 10%;
+	float: right;
+}
+
+.header_left .logo {
+	width: 20%;
+	height: 80%;
+	float: left;
+	font-family: 'Nanum Gothic';
+	margin-left: 20%;
+}
+
+.logo {
+	text-decoration: none;
+	color: #222;
+}
+
+.header_top ul li {
+	float: left;
+	padding: 16px 12px;
+}
+
+.header_left {
+	clear: both;
+	width: 80%;
+	height: 69%;
+	padding-top: 10px;
+}
+
+/* 
+float 시키면 아래쪽 영역에 영향을 준다
+아래쪽 그룹에 clear:both 을 하여 float 해제를 시켜야 한다
+*/
+.nav>nav>.navi>li {
+	float: left;
+	width: 120px;
+}
+
+.nav>nav>.navi>li>a {
+	padding: 12px 18px;
+	display: inline-block;
+	color: #000000;
+}
+
+.nav>nav>.navi>li>.navi2 {
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	display: none;
+	background: #fff;
+	position: absolute;
+	z-index: 99999;
+}
+
+.nav>nav>.navi>li>.navi2>li {
+	float: none;
+	padding: 12px 18px;
+}
+
+.topmenu_line {
+	clear: both;
+	background: #ccc;
+	height: 1px;
+}
+
+/*topmenu3*/
+.search table {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin: 0 auto;
+	width: 400px;
+	height: 60px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.search table {
+	margin: 0 auto;
+	width: 400px;
+	height: 60px;
+}
+
+.search tr td {
+	border: 4px solid #93b9e6;
+}
+
+.search img {
+	width: 50px;
+	height: 50px;
+}
+
+.Login_tab_M_con {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.Login_tab_M_con input {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.img_Back {
+	background: #93b9e6;
+}
+
+.menuline {
+	width: 100%;
+	clear: both;
+	background: #93b9e6;
+	height: 1px;
+	background: #93b9e6;
+}
+
+.header_3 {
+	width: 100%;
+	margin: 0 auto;
+	height: 300px;
+}
+
+.header_3 .header_top {
+	float: right;
+	height: 50px;
+	width: 100%;
+}
+
+.header_3 .header_top a {
+	color: #808080;
+}
+
+.header_3 .header_top ul {
+	margin-right: 10%;
+	float: right;
+}
+
+/* hidden css */
+.hidden1 {
+	display: none;
+}
+
+.hidden2 {
+	display: none;
+}
+
+.hidden3 {
+	display: none;
+}
+
+.hidden4 {
+	display: none;
+}
+
+/**/
+.for_you_right {
+	float: right;
+	margin-left: 85%;
+	margin-top: 25%;
+	position: fixed;
+}
+
+.for_you_right ul {
+	color: #000000;
+	border: 1px solid #808080;
+	padding: 30px 10px;
+	list-style: none;
+	border-radius: 20%;
+	width: 130px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 20%;
+	text-align: center;
+}
+
+.mar_bo {
+	margin-bottom: 30px;
+}
+
+.for_you_right ul li a {
+	text-decoration: none;
+}
+
+.for_you_right ul li a:hover {
+	font-size: 110%;
+	color: #ffff00;
+}
+
+.show-on-scroll {
+	visibility: hidden;
+}
+
+.show-on-scroll.shown {
+	visibility: visible;
+}
+
+/**/
+.for_you_right2 {
+	float: right;
+	margin-left: 85%;
+	margin-top: 22%;
+	position: fixed;
+}
+
+.for_you_right2 ul {
+	color: #000000;
+	border: 1px solid #808080;
+	padding: 30px 10px;
+	list-style: none;
+	border-radius: 20%;
+	width: 130px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 10%;
+	text-align: center;
+}
+
+.for_you_right2 ul li a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.for_you_right2 ul li a:hover {
+	font-size: 110%;
+	color: #ffff00;
+}
+
+.search {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}

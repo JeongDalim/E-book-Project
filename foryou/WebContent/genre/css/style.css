@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*genre css*/
+.genretitle {
+	both: clear;
+	text-align: center;
+}
+
+.imgtab {
+	both: clear;
+	margin: 0 auto;
+}
+
+.imgtab tr td img {
+	width: 240px;
+	height: 180px;
+}
+
+/*list css*/
+.contain {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.list-title {
+	
+}
+
+.list-contents {
+	width: inherit;
+}
+
+.list-table {
+	width: inherit;
+	margin: 0 auto;
+}
+
+.list-table tr td img {
+	width: 320px;
+	height: 448px;
+}

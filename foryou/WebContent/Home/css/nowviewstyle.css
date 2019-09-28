@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean')
+	;
+
+.cen {
+	text-align: center;
+}
+
+.cen tr td {
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.view_title {
+	margin: 0 auto;
+	width: 730px;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.view table {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	padding: 10px;
+}
+
+.view {
+	clear: both;
+	border-top: 1px solid #8080c0;
+	border-bottom: 1px solid #8080c0;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.view_main img {
+	width: 150px;
+	height: 210px;
+}
+
+.view_main {
+	padding-bottom: 10px;
+}
+
+.view_main tr td h2 {
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+.star_rating {
+	font-size: 0;
+	letter-spacing: -4px;
+}
+
+.star_rating a {
+	font-size: 30px;
+	letter-spacing: 0;
+	display: inline-block;
+	margin-left: 5px;
+	color: #ccc;
+	text-decoration: none;
+}
+
+.star_rating a:hover {
+	text-decoration: none;
+}
+
+.star_rating a:first-child {
+	margin-left: 0;
+}
+
+.star_rating a.on {
+	color: #f8cdd7;
+}
+
+.view_main input {
+	width: 150px;
+	height: 60px;
+	margin: 0 auto;
+	color: #ffffff;
+	background: #93b9e6;
+	font-size: 20px;
+	border: 0;
+	border-radius: 5px 5px;
+	margin-left: 50px;
+}
+
+.view_main_button input {
+	margin: 0 auto;
+	background: #f8cdd7;
+}
+
+.menuline_V {
+	width: 100%;
+	clear: both;
+	background: #93b9e6;
+	height: 1px;
+	background: #93b9e6;
+}
+
+.ad {
+	width: 100%;
+	height: 210px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #93b9e6;
+}
+
+.ad img {
+	width: 600px;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.h_slider {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.navi {
+	margin: 0 auto;
+}
+
+.navi li {
+	float: left;
+}
+
+.view_name {
+	font-size: 20px;
+	color: #808080;
+	padding-bottom: 15px;
+	padding-left: 32%;
+}
+
+.view_name_b {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-bottom: 100px;
+}
+
+.view_name_b table {
+	font-size: 20px;
+	color: #808080;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.view_name_b tr td {
+	border-bottom: 2px solid #93b9e6;
+	padding: 3% 0;
+}
+
+.view_name_bp td {
+	color: #000000;
+	font-size: 15px;
+}
+
+.view_name_r td {
+	font-size: 20px;
+	color: #808080;
+	float: left;
+	padding-left: 8%;
+}
+
+.view_name_r {
+	border-bottom: 2px solid #93b9e6;
+	padding-top: 70px;
+	padding-bottom: 10px;
+}
+
+.review {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.review table {
+	width: 40%;
+}
+
+.view_name_r2 {
+	padding-top: 40px;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.view_name_r2_a {
+	color: #808080;
+	padding: 20px 0;
+}
+
+.view_name_r2_b {
+	font-size: 30px;
+	text-align: center;
+}
+
+.view_name_r2_c {
+	font-size: 30px;
+}
+
+.star_rating_a {
+	font-size: 0;
+	letter-spacing: -4px;
+}
+
+.star_rating_a a {
+	font-size: 15px;
+	letter-spacing: 0;
+	display: inline-block;
+	margin-left: 5px;
+	color: #ccc;
+	text-decoration: none;
+}
+
+.star_rating_a a:hover {
+	text-decoration: none;
+}
+
+.star_rating_a a:first-child {
+	margin-left: 0;
+}
+
+.star_rating_a a.on {
+	color: #f8cdd7;
+}
+
+.view_name_r2_f {
+	margin: 0 auto;
+	width: 500px;
+	height: 100px;
+}
+
+.view_name_r2_f input {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	border: 1;
+	border-radius: 5px 5px;
+}
+
+.view_name_r2_g input {
+	width: 100px;
+	height: 40px;
+	float: right;
+	background: #93b9e6;
+	border: 0;
+	color: #fff;
+}
+
+.view_name_r3 {
+	padding-top: 40px;
+	border-bottom: 2px solid #93b9e6;
+	padding-bottom: 40px;
+}
+
+.view_date {
+	font-size: 13px;
+	color: #808080;
+}
+
+.view_name_r2_d {
+	text-align: center;
+	padding-left: 160px;
+}
+
+/*preview*/
+.h_slider img {
+	margin: 0 auto;
+	text-align: center;
+	width: 500px;
+	height: 700px;
+	float: left;
+}
+
+.h_slider {
+	padding-left: 25%;
+}
+
+.view_name_Pre {
+	font-size: 30px;
+	color: #808080;
+	padding-bottom: 50px;
+	padding-left: 25%;
+	padding-top: 50px;
+}
+
+.preview_button input {
+	background: #93b9e6;
+	width: 130px;
+	height: 60px;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	float: right;
+	border-radius: 5px 5px;
+	margin-right: 3%;
+}
+
+.preview_button {
+	margin: 0 auto;
+	width: 100%;
+	padding-right: 20%;
+}
+
+.preview_button2 input {
+	background: #f8cdd7;
+}

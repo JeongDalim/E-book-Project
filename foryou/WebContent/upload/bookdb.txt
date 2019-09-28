@@ -1,0 +1,86 @@
+create table book(
+   idx number(6) primary key,
+   writer varchar2(100) not null,
+   bookname varchar2(1000) not null,
+   genre varchar2(1000) not null,
+   contents varchar2(4000) not null,
+   score varchar2(10) default 0,
+   intro varchar2(1000) not null,
+   price number(10) not null,
+   rentcnt number(10) default 0,
+   company varchar2(30),
+   pdate date,
+   filename varchar2(1000) not null,
+   indate date default sysdate,
+   bookplot varchar2(4000) not null
+);
+
+create sequence book_seq_idx;
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'박수진','술의향기','로맨스','testcontent.JPG','행정 고시에 갓 패스한 시크한 도시남, 김호.',1000,'다향','2019-06-28','술의향기.jpg','행정 고시에 갓 패스한 시크한 도시남, 김호. 그는 지역 축제를 기획하라는 미션을 받고 소곡주를 만드는 시골 양조 장에 일꾼으로 투입된다. 저는 도와드리러 온 건데 어쩐지 방해꾼 대하듯 하시네 요. 외부에서 누가 오면 자꾸 경계하게 돼요. 그곳에서 만난 양조장 대표 최명지는 나이답지 않은 당찬 모습으로 자꾸만 그의 시선을 붙들고.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'조조 모예스','after you','로맨스','testcontent.JPG','불가능할 것 없는 뉴욕에서 가능한 모든 걸 경험할 것',1000,'아르테','2019-01-23','afteryou.jpg','윌과 사랑에 빠졌지만 스스로 생을 마감하고 싶어 하는 그를 결국 떠나보낼 수밖에 없었던 루이자. 윌이 죽은 이후 루이자의 삶을 궁금해하는 독자들의 관심과 사랑으로 탄생한 『애프터 유』는 루이자가 윌을 잃은 슬픔에서 벗어나 윌이 당부한 대로 대담한 삶을 향해 나아가는 성장 과정을 조조 모예스의 특기인 재치 있는 대화와 생동감 넘치는 문체로 풀어낸다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'김석진','삼류무사','무협','testcontent.JPG','무림을 구한 세 명의 영웅, 그들이 돌아왔다!',1000,'로크미디어','2019-04-02','삼류무사.jpg','무림을 구한 세 명의 영웅, 그들이 돌아왔다! 『삼류무사』, 그 두 번째 이야기! 최종 결전 이후 일 년, 화려했던 금의환향 하지만 아직 풀리지 않은 의문 하나! “과연 강호는 진정 평온을 되찾은 것일까?” 끝나지 않은 암중 음모를 깨닫고 또다시 길을 떠난 장추삼! 북궁단야와 함께 누명을 쓰고 투옥된 하운을 구출하지만 영웅에서 하루아침에 무림공적으로 낙인찍히는데…… 동네 건달 장추삼, 얼음덩어리 북궁단야, 고지식의 표본 하운 죽음의 덫을 놓고 기다리는 모종의 세력에 맞선 강호삼성의 불꽃같은 활약이 펼쳐진다!');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'성상현','망향무사','무협','testcontent.JPG','성상현 신무협 장편소설 [망향무사]',1000,'파피루스','2019-03-12','망향무사.jpg','성상현 신무협 장편소설 [망향무사]. 북방군 특수부 십번대 대장 소천호. 십년전쟁을 끝장내고 귀향하다. 하지만 그를 기다리는 건 변해 버린 고향 그리고 빛바랜 추억뿐이었는데……. “그래, 말로 해서 알아먹으면 무림인이 아니지.” 부러지지 않는 강골, 압도적인 힘! 경고하노니 절대 그를 분노케 하지 마라!');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'히가시노 게이고','살인 현장은 구름 위','sf','testcontent.JPG','탑승객들을 둘러싸고 벌어지는 기상천외한 사건들',1000,'재인','2019-06-28','살인현장은구름위.jpg','탑승객들을 둘러싸고 벌어지는 기상천외한 사건들, 그리고 거기에 도전하는 스튜어디스 명탐정 콤비의 좌충우돌, 유쾌한 활약 신일본 항공의 스튜어디스, 속칭 A코와 B코. 도쿄대를 중퇴하고 입사 시험에 톱으로 합격한 갸름한 얼굴의 미인형으로 회사의 신뢰가 두터운 A코에 반해, 턱걸이로 입사 시험을 통과하고 훈련 과정도 꼴찌로 마친 B코는 승무원치고는 흔치 않은 뚱뚱한 체형에 궁금한 것을 못 참으며 사건을 몰고 다니는 떠버리 스타일.이처럼 둘은 하나부터 열까지 정반대지만 신기할 정도로 호흡이 잘 맞아 늘 붙어 다닌다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'히가시노 게이고','사소한 변화','sf','testcontent.JPG','뇌 이식 이후, 나의 모든 것이 달라져간다',1000,'비채','2019-06-12','사소한변화.jpg','뇌 이식 이후, 나의 모든 것이 달라져간다! 데뷔 35년을 맞이한 지금도 굳건한 필력으로 인기를 구가하는 히가시노 게이고가 데뷔 6주년을 맞이한 1991년에 선보인 소설 『사소한 변화』. 전면 재번역을 거치고 저자와의 긴밀한 논의를 바탕으로 새 제목을 붙여 독자들과 다시 만나는 작품으로, 뇌 이식이라는 소재의 파격성은 물론 터프하면서도 거침없는 전개와 질주하는 듯한 속도감으로 독자를 압도하는 히가시노 게이고표 서스펜스의 세계를 엿볼 수 있다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'야쿠마루 가쿠','우죄','sf','testcontent.JPG','어떤 얘기를 듣더라도 친구로 지내겠다고 약속해줄래?',1000,'달다','2019-06-15','우죄.jpg','과거 자살한 친구의 죽음에 관한 비밀을 간직하고 있는 마스다는 언론인을 꿈꾸지만 좌절하고, 생계를 위해 기숙사가 있는 작은 스테인리스 가공 회사에 취직한다. 같은 날 입사한 동갑내기 스즈키와 기숙사 옆방을 쓰게 된 마스다는 사람을 피하고 어딘가 묘한 분위기를 풍기며 자신의 과거에 대해서도 이야기하기를 꺼리던 스즈키와 점차 우정을 키워간다. 그러던 어느 날, 한 사건을 계기로 마스다는 스즈키가 14년 전 일본을 뒤흔든 살인사건의 범인이 아닐까 의심을 품게 되는데…….');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'김탁환','대소설의 시대','소설','testcontent.JPG','이 세상 어디에도 없는 우리만의 소설이야',1000,'민음사','2019-05-10','대소설의시대.jpg','“이건 청나라에도 없고 일본에도 없는, 이 세상 어디에도 없는 우리만의 소설이야. 놀랍지 않은가?” 궁궐, 사대부 가문, 세책방을 가리지 않고  소설 애호가들로 넘쳐났던 18세기 대소설의 시대 꿈과 현실, 결혼과 가문, 삶과 죽음에 대한 걸작을 읽고 쓰고 필사하며 한계에 도전한 여성 독자들이 만든 거대한 소설의 역사가 지금, 베일을 벗는다!');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'김재희','경성탐정이상','소설','testcontent.JPG','진창 같은 이곳이 천국이겠습니까',1000,'시공사','2019-05-08','경성탐정이상.jpg','매일같이 늘어나는 수입상점으로 화려한 종로. 그중 고가의 유럽 도자기를 파는 ‘마리 앤티크’의 주인 하영이 상과 구보를 찾아온다. 하영이 단골을 위해 마련한 티파티는 명문가 출신 박씨 부인과 벼락부자 성북 부인을 중심으로 패가 갈리고, 서로 폄훼하는 와중에 큰 싸움으로 번진다. 하영이 둘을 화해시킬 요량으로 마련한 모임에서 그만 한 부인이 급사하고, 괴편지로 인해 단순한 사고가 아님을 알게 되었다는 것이다. 조사를 위해 티파티에 참석한 상과 구보는 향긋한 장미 향 너머 괴팍한 면면을 감춘 귀부인들과 마주하는데……. ');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'제임스 클리어','아주 작은 습관의 힘','자기계발','testcontent.JPG','최고의 변화는 어떻게 만들어지는가',1000,'비즈니스북스','2019-02-26','아주작은습관의힘.jpg','단계적이고 체계적인 자기계발 방법을 찾는 사람들을 위한 『아주 작은 습관의 힘』. 고교 시절 촉망받는 야구선수였던 저자는 연습 중 동료의 야구 배트에 얼굴을 정통으로 강타당하는 큰 사고를 당했고, 걸을 수조차 없었던 저자는 절망에 빠지는 대신 지금 당장 할 수 있는 아주 작은 일이라도 찾아 그것을 반복하자고 마음먹었다. 그 후 매일 걷기 연습을 해서 6개월 만에 운동을 할 수 있게 되었고, 6년 후에는 대학 최고 남자 선수가 되었다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'데이비드 버스','욕망의 진화','자기계발','testcontent.JPG','사랑, 연애, 섹스, 결혼 남녀의 엇갈린 욕망에 담긴 진실',1000,'사이언스북스','2007-08-15','욕망의진화.jpg','<욕망의 진화>는 인간 남녀의 서로 다른 욕망 아래 숨겨진 진화의 역사를 살펴보는 책이다. 1994년에 출간된 초판에 새로운 연구 성과를 덧붙인 2003년 개정판을 데이비드 버스의 제자이자 한국인 최초 진화심리학 박사인 전중환이 번역하였다. 남녀의 사랑, 연애, 섹스, 결혼의 실체를 밝히기 위해 먼 과거에서부터 현재에 이르기까지 수백만 년에 걸친 인간 진화의 역사를 파헤치고, 우리 마음 속 깊은 곳에 숨겨진 인간 본연의 성적 욕망을 드러낸다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'신수림','매일 8체질 주스','건강','testcontent.JPG','내 몸에 딱! 한의사의 맞춤 처방',1000,'니들북','2019-06-25','매일8체질주스.jpg','요즘은 건강하면서 동시에 날씬한 몸이 대세다. 이렇게 건강을 생각한 다이어트의 방향성은 바람직하지만, 한 번이라도 다이어트를 해본 적이 있는 사람이라면 건강하게 살 빼는 게 말처럼 쉽지 않다는 걸 잘 알고 있을 것이다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'키노 맥그레거','요가 수업','건강','testcontent.JPG','건강하고 평화로운 삶을 위한 30일의 요가 여행',1000,'침묵의향기','2019-06-25','요가수업.jpg','세계적으로 유명한 요가 강사이며 베스트셀러 《아쉬탕가 요가의 힘》의 저자인 키노 맥그레거가 요가에 관해 더 깊이 공부할 수 있도록 안내하는 요가 에세이. 20년에 걸친 치열한 요가 수련과 공부, 요가 지도 경험, 삶에서 배운 지혜와 통찰을 바탕으로 요가 수련에 깊이를 더하고 더욱 건강하며 평화로운 삶을 사는 데 도움이 되는 글을 다채롭게 엮었다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'선바','제 인생에 답이 없어요','인문','testcontent.JPG','제 인생에 답이 없어요. 근데 괜찮아요. 질문은 있으니까요.',1000,'위즈덤하우스','2019-06-16','제인생에답이없어요.jpg','게임을 하는 것이 죄악이던 어린 시절, 하루 종일 컴퓨터만 하는 사람이 되고 싶다는 소원을 품었던 아이는 마침내 소원을 이루었다. 그리고 생각했다. ‘소원을 빌 때는 신중해지자.’ 대학을 10년째 다니고 있는 학생이자 게임 스트리밍 전문 유튜버, 선바. 인터넷 방송과 유머에 대한 그만의 지론은 물론, 그간 그가 걱정인지 잔소리인지 저주인지 모를 이야기들을 들으며 터득한 인생 해법을 풀어놓는다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'최태성','역사의 쓸모','인문','testcontent.JPG','500만 명의 가슴을 울린 명강의의 주인공 최태성이 역사에서 찾은 자유롭고 떳떳한 삶을 위한 22가지 통찰.',1000,'다산초당','2019-06-14','역사의쓸모.jpg','500만 명의 가슴을 울린 명강의의 주인공 최태성이 역사에서 찾은 자유롭고 떳떳한 삶을 위한 22가지 통찰. 지난 20여 년간 대한민국 대표 역사 강사 최태성을 찾은 사람은 비단 시험을 준비하는 학생만이 아니었다. 교양을 쌓으려는 일반인은 물론이고, 비즈니스 인사이트를 구하는?CEO부터 삶을 방향을 고민하는 청년과 중년까지 일과 삶의 문제로 갈등하는 모든 이가 그를 찾았다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'강영연','버핏클럽','금융','testcontent.JPG','‘현문현답’ 버크셔 해서웨이 주총 하이라이트부터',1000,'에프엔미디어','2019-06-01','버핏클럽.jpg','아마존 주식 매수는 버핏의 가치투자 철학에 변화가 생겼다는 뜻일까? 한국에서도 버핏식 장기 투자가 가능할까? 가치투자자를 위한 무크 〈버핏클럽〉 2호는 구순이 다 되어서도 변화에 유연하게 대응하며 진화하는 버핏과 그의 투자 방법론을 조명한다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'에노모토 아츠시','로케이션','금융','testcontent.JPG','과학적으로 분석한 입지 원리!',1000,'다산북스','2019-05-30','로케이션.jpg','4만 건의 빅데이터를 통해 가게 매출의 이유를 입지의 관점에서 분석한 입지 입문서 『로케이션』. 여러 가지 입지 요인 중에서도 직접적으로 매출에 영향을 미치는 입지 요인이 무엇인지 철저히 밝히고, 비즈니스에 맞게 해당 요인을 강화하는 방법을 알려주는 책이다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'강한나','리얼 블라디보스톡','여행','testcontent.JPG','헤매지 않고 바로 통하는 현지밀착형 여행서 ‘리얼 시리즈’?',1000,'한빛라이프','2019-06-14','리얼블라디보스톡.jpg','여행자에게 꼭 필요한 정보만을 소개하는 ‘리얼 시리즈’가 추천하는 이번 여행지는 블라디보스톡이다. 최근 여러 방송 프로그램에서 소개되면서 핫한 여행지로 떠오른 블라디보스톡은 비행기로 2시간 40분이면 도착하는 가장 가까운 유럽이다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'현경채','매혹의 땅, 코카서스','여행','testcontent.JPG','여행을 위해 논문을 뒤지는 음악학자의 리얼 코카서스 3국 여행기',1000,'띠움','2019-05-20','매혹의땅,코카서스.jpg','일명 코카서스 3국이라 불리는 조지아, 아르메니아, 아제르바이잔. 이름도 생소한 나라에 겁 없이 도전한 58세 여행자가 있다. 여행 전에 논문을 뒤지는 학자이며 가이드의 말을 필기하는 모범생 스타일이지만 마음 맞는 여행자가 생기면 갑자기 루트를 바꾸는 반전 매력도 가졌다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'커넥팅랩','블록체인 트렌드 2020','경제','testcontent.JPG','불가능할 것 없는 뉴욕에서 가능한 모든 걸 경험할 것',1000,'비즈니스북스','2019-06-18','블록체인트렌드2020.jpg','지난 5년간?ICT?분야 트렌드서 《모바일 트렌드》 시리즈를 집필해 온 커넥팅랩이 수차례 진행한 세미나와 연구의 집약한 결과물로, 현재 블록체인 산업 동향을 빠르고 정확하게 담아낸 『블록체인 트렌드 2020』.?IT부터 금융까지 각 분야의 전문가들로 구성된 커넥팅랩은 대한민국 혁신기술의 최전선에서 일하는 실무자들로 구성된 포럼으로 블록체인 기술에 오랜 동안 관심을 가져 왔다.');
+insert into book(idx,writer,bookname,genre,contents,bookplot,price,company,pdate,filename,intro) values(book_seq_idx.nextval,'피파 맘그렌','시그널','경제','testcontent.JPG','불가능할 것 없는 뉴욕에서 가능한 모든 걸 경험할 것',1000,'한빛비즈','2019-05-27','시그널.jpg','일상의 작은 신호를 포착하여 다가올 세계 경제의 풍랑 속에서 좀 더 능동적으로 대처할 수 있게 해주는 『시그널』. 오랜 시간 세계 경제가 돌아가는 상황을 이해하고 그것이 물가와 투자자에게 미칠 영향을 예측해 온 전 백악관 경제보좌관 피파 맘그렌이 어떻게 미래를 준비해야 하는지, 사건이 일어나 시장이 대가를 치르고 대서특필되는 사태가 일어나기 전에 어떻게 해야 사건을 미리 예견하고 대응 방안을 강구할 수 있는지, 그 방법을 알고 싶어 하는 사람들에게 세계 경제가 보내는 신호를 직접 관찰할 수 있는 방법을 알려주는 책이다.');
+
+
+
+create table rent(
+   custno varchar2(20) not null,
+   bookno varchar2(3) not null,
+   outdate date not null,
+   indate date default sysdate
+);
+
+create table member(
+   idx number(10) primary key,
+   id varchar2(100) not null,
+   pw varchar2(100) not null,
+   name varchar2(20) not null,
+   email varchar2(200) not null,
+   tel varchar2(20) not null,
+   rentlist varchar2(1000) default '0',
+   genre varchar2(500) not null,
+   subdate date,
+   bno varchar2(30),
+   gubun varchar2(10) default 'cust'
+);
+
+create sequence member_seq_idx;
+
+insert into member(idx,id,pw,name,email,tel,genre,gubun) values(0,'admin','1234','admin','foreverchoi0706@naver.com','010-3909-0483','sf,af,romance','admin');
+insert into member(idx,id,pw,name,email,tel,genre) values(member_seq_idx.nextval,'nomaluser','1234','userkim','userkim@naver.com','010-1111-2222','sf,af,romance');
+insert into member(idx,id,pw,name,email,tel,genre,subdate) values(member_seq_idx.nextval,'subscuser','1234','subsclee','subsclee@naver.com','010-9999-8888','economic,novel,health','2019-07-01');
+
+select * from member;
+
+create table bigdata(
+   idx number(10) primary key,
+   sf number(3) default 0,
+   af number(3) default 0,
+   humanities number(3) default 0,
+   economic number(3) default 0,
+   romance number(3) default 0,
+   novel number(3) default 0,
+   development number(3) default 0,
+   health number(3) default 0,
+   finance number(3) default 0,
+   travel number(3) default 0
+);
+
+create sequence bigdata_seq_idx;

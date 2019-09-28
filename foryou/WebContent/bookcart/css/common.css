@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*초기화 시키기 위해 모와두는 곳*/
+/* reset css*/
+/*모든태그는 기본 css값이 있는데 초기화를 해야한다*/
+/*모든 태그(*)에 바깥여백, 안쪽여백 0 으로 초기화,가로폭안에 실제 크기값을 포함 시킨다*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul, ol {
+	list-style: none;
+} /*목록을 사용하지 않겠다*/
+html, body {
+	font-family: 'Nanum gothic';
+}
+
+a {
+	text-decoration: none; /*밑줄 생략*/
+	color: #333;
+	font-family: 'Nanum gothic';
+}
+
+a:hover {
+	text-decoration: underline; /*  커서 됐을 떄 밑줄 생기게 하는 거 */
+}
+
+table, th, td {
+	border-collapse: collapse;
+} /* 셀과 셀사이 붙이기*/
+fieldset {
+	border: 0 none;
+}
+
+html, body {
+	height: 100%;
+}

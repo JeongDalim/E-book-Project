@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* topmenu css */
+.header {
+	width: 100%;
+	margin: 0 auto;
+	height: 120px;
+}
+
+.header .header_top {
+	float: right;
+	height: 50px;
+	width: 100%;
+}
+
+.header .header_top a {
+	color: #808080;
+}
+
+.header .header_top ul {
+	margin-right: 10%;
+	float: right;
+}
+
+.header_left .logo {
+	width: 20%;
+	height: 80%;
+	float: left;
+	font-family: 'Nanum Gothic';
+	margin-left: 20%;
+}
+
+.header_left .logo a {
+	color: #000000;
+}
+
+.header_top ul li {
+	float: left;
+	padding: 16px 12px;
+}
+
+.header_left {
+	clear: both;
+	width: 80%;
+	height: 69%;
+	padding-top: 10px;
+}
+
+/* 
+float 시키면 아래쪽 영역에 영향을 준다
+아래쪽 그룹에 clear:both 을 하여 float 해제를 시켜야 한다
+*/
+.nav>nav>.navi>li {
+	float: left;
+	width: 120px;
+}
+
+.nav>nav>.navi>li>a {
+	padding: 12px 18px;
+	display: inline-block;
+	color: #000000;
+}
+
+.nav>nav>.navi>li>.navi2 {
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	display: none;
+	background: #fff;
+	position: absolute;
+	z-index: 99999;
+}
+
+.nav>nav>.navi>li>.navi2>li {
+	float: none;
+	padding: 12px 18px;
+}
+
+.topmenu_line {
+	clear: both;
+	background: #ccc;
+	height: 1px;
+}
